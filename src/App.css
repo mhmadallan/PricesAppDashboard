@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
+*{
+  font-family: 'Marcellus', serif;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home{
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 150px;
+  font-size: 18px;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-info{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 4px;
+  margin: 0 auto;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.card{
+  background-color: whitesmoke;
+  border: 1px solid darkgray ;
+  border-radius: 20px;
+  box-shadow: 2px 2px darkgray;
+  width: 500px;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-right{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  
+}
+.card-left{
+  margin-left: 20px;
+}
+.card label{
+  color: grey;
+  font-size: 22px;
+}
+.card p {
+  font-size: 22px;
+}
+.btns button{
+  margin: 5px auto;
+  width: 90%;
+  height: 40px;
+  float: inline-end;
+  margin-right: 10px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 16px;
+}
+.card button:hover{
+  cursor: pointer;
+}
+/*
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0 auto;
+}*/
+.home-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  margin: 150px auto;
+  max-width: 50%;
+  
+}
+.home-form input{
+  
+  background-color: whitesmoke;
+  height: 20px;
+  border: 1px solid darkgrey;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px darkgray;
+}
+.home-form input:hover{
+  background-color:darkgray;
+  cursor: pointer;
+}
+.home-form button{
+  width: 300px;
+  height:50px;
+  margin: 20px auto;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.home-form button:hover{
+  cursor: pointer;
+}
+/* EDIT FORM IN EDITCOMPONENT*/
+.edit-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  margin: 150px auto;
+  max-width: 50%;
+  
+}
+.edit-form input{
+  
+  background-color: whitesmoke;
+  height: 40px;
+  border: 1px solid darkgrey;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px darkgray;
+}
+.edit-form input:hover{
+  background-color:darkgray;
+  cursor: pointer;
+}
+.edit-form button{
+  width: 300px;
+  height:50px;
+  margin: 20px auto;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.edit-form button:hover{
+  cursor: pointer;
+}
+.home-form select{
+  
+  background-color: whitesmoke;
+  height: 50px;
+  border: 1px solid darkgrey;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px darkgray;
 }
